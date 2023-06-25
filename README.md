@@ -4,10 +4,9 @@ A developed Page of a figma design responsive to any screen
 
 ## Built with
 >-HTML
-<br />
+><br />
 >-CSS
-
-<br />
+><br />
 >-JavaScript
 
 ## Live Demo
