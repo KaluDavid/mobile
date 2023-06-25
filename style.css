@@ -1,0 +1,325 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Halant', serif;
+
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.container {
+    align-items: center;
+    width: 65%;
+    text-align: left;
+    /* margin-left: 10%; */
+}
+
+
+
+header {
+    border: solid #155EEF 1px;
+    display: flex;
+    gap: 40%;
+    margin: 2%;
+    padding: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    padding: 10px;
+    gap: 40px;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    /* padding: 10%; */
+}
+
+
+
+
+.head a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.head .Hire {
+    color: #155EEF;
+    border: solid #155EEF 1px;
+    border-radius: 5px;
+    padding: 3px;
+
+}
+
+header img {
+    width: 20%;
+    height: 20%;
+}
+
+.icon {
+    display: none;
+}
+
+
+.welcome {
+    border: solid #155EEF 1px;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 2%;
+    display: flex;
+    gap: 5%;
+
+}
+
+h1 {
+    color: #155EEF;
+    font-family: 'Halant';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+
+}
+
+.welcome img {
+    width: 40%;
+}
+
+.welcome button {
+    background: #155EEF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 4%;
+}
+
+.welcome div {
+    margin-top: 5%;
+
+}
+
+
+.About {
+    border: solid #155EEF 1px;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 2%;
+    display: flex;
+    gap: 5%;
+
+}
+
+.About img {
+    width: 100%;
+    height: 100%;
+}
+
+.About div {
+    margin-top: 5%;
+}
+
+.About h1 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.pix {
+    border: solid #155EEF 1px;
+    padding: 5px;
+    width: 100rem;
+    margin-bottom: 5%;
+}
+
+footer {
+    border: solid #155EEF 1px;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 2%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+
+}
+
+footer .just {
+    width: 20%;
+    height: 20%;
+    margin-top: 5px;
+}
+
+footer div {
+    display: flex;
+    gap: 15px;
+
+}
+
+@media screen and (min-width:861px) and (max-width:956px) {
+    .nav-menu {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 861px) {
+    .head a:not(:first-child) {display: none;}
+    .head a.icon {
+      float: right;
+      display: block;
+    }
+    .nav-menu{
+        display: block;
+    }
+  }
+
+
+
+
+@media screen and (max-width:861px) {
+    .nav-menu {
+
+        display: none;
+
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+
+    .head.responsive {position: relative;}
+    .head.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .head.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+@media screen and (max-width:800px) {
+    body {
+        width: auto;
+    }
+
+    .container {
+        width: auto;
+    }
+
+    .head {
+        width: 10px;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+
+
+    .About {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .About .pix {
+        width: 100%;
+
+    }
+
+
+    .welcome {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .welcome button {
+        width: 100%;
+    }
+
+    .welcome img {
+        width: 100%;
+        margin-top: 7%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    footer div {
+        margin-top: 3%;
+    }
+
+    footer .just {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 526px) and (max-width: 800px) {
+    .container {
+        width: 70%;
+        font-size: large;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width:1075px) {
+    .container {
+        align-items: center;
+        margin-left: 30%;
+    }
+}
+
+
+@media screen and (min-width:800px) and (max-width:860px) {
+
+    header img {
+        width: 30%;
+    }
+
+    .welcome img {
+        width: 45%;
+        height: 70%;
+        margin-top: 9%;
+    }
+
+    .About .pix {
+        width: 100rem;
+        height: 12rem;
+        margin-top: 20%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    footer .just {
+        width: 29%;
+    }
+}
