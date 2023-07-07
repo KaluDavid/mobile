@@ -1,12 +1,18 @@
 
+
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "head") {
-    x.className += " responsive";
+  var x = document.getElementById("visible");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    x.className = "head";
+    x.style.display = "block";
   }
 }
+
+
+
+
+
 
 
 
